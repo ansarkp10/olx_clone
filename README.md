@@ -66,17 +66,6 @@ Viewing Products: Users can search for products and view detailed information ab
 Editing and Deleting Products: Users can manage their listings after logging in.
 Folder Structure
 
-olx-clone/
-├── public/
-├── src/
-│   ├── components/      # Reusable components
-│   ├── pages/          # Page components (Home, Create, View, etc.)
-│   ├── store/          # Context and state management
-│   ├── App.js          # Main application file
-│   └── index.js        # Entry point for React
-├── package.json
-└── README.md
-
 **Contributing**
 Contributions are welcome! If you'd like to contribute to this project, please follow these steps:
 
