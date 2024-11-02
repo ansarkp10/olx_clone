@@ -1,0 +1,85 @@
+.viewParentDiv {
+  padding-top: 4em;
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.viewParentDiv .imageShowDiv {
+  padding: 16px;
+  width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.viewParentDiv .imageShowDiv img {
+  width: 100%;
+  max-width: 600px;
+  max-height: 85vh;
+  border: 10px solid #fff;
+  border-bottom: 20px solid #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+}
+
+
+.viewParentDiv .rightSection {
+  padding: 16px;
+  margin-top: 2em;
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.viewParentDiv .rightSection .productDetails,
+.viewParentDiv .rightSection .contactDetails {
+  border: 1px solid #e0e0e0;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  background-color: #ffffff;
+}
+
+.viewParentDiv .rightSection .productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.viewParentDiv .rightSection .productDetails :first-child {
+  font-weight: 700;
+  color: #002f34;
+  font-size: 32px;
+  line-height: 1.2;
+  margin-bottom: 8px;
+}
+
+.viewParentDiv .rightSection .productDetails p,
+.viewParentDiv .rightSection .productDetails span {
+  font-size: 16px;
+  color: #595959;
+  margin: 4px 0;
+}
+
+.viewParentDiv .rightSection .contactDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.viewParentDiv .rightSection .contactDetails :first-child {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #002f34;
+  margin-bottom: 8px;
+}
+
+.viewParentDiv .rightSection .contactDetails p {
+  font-size: 16px;
+  color: #595959;
+}

@@ -1,0 +1,139 @@
+/* General Styles for the Parent Div */
+.postParentDiv {
+  padding: 20px;
+  background-color: #f0f0f0; /* Light background color */
+}
+
+/* Styles for the Card Container */
+.moreView {
+  margin-bottom: 40px; /* Space between sections */
+}
+
+/* Heading Styles */
+.heading {
+  display: flex;
+  justify-content: space-between; /* Space between heading items */
+  align-items: center; /* Center items vertically */
+  margin-bottom: 20px; /* Space below heading */
+}
+
+.heading span {
+  font-size: 1.5em; /* Font size for headings */
+  font-weight: bold; /* Bold text */
+}
+
+/* Styles for the Card Collection */
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  gap: 20px; /* Space between cards */
+}
+
+/* Individual Card Styles */
+.card {
+  background-color: white; /* Card background color */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  width: 200px; /* Fixed width for cards */
+  overflow: hidden; /* Hide overflow */
+  position: relative; /* For absolute positioning of favorite icon */
+  cursor: pointer; /* Cursor pointer for clickable cards */
+  transition: transform 0.2s ease; /* Smooth transition for hover effect */
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Image Container Styles */
+.card .image {
+  width: 100%; /* Image takes full width */
+  height: 120px; /* Fixed height for the image */
+  overflow: hidden; /* Hide overflow */
+}
+
+.card img {
+  width: 100%; /* Responsive image */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop image to fill container */
+}
+
+/* Content Styles */
+.content {
+  padding: 10px; /* Padding inside content */
+}
+
+/* Text Styles */
+.rate {
+  font-size: 1.2em; /* Larger font size for price */
+  font-weight: bold; /* Bold price */
+  color: #333; /* Darker color for better visibility */
+  margin: 5px 0; /* Margin above and below */
+}
+
+.kilometer {
+  font-size: 0.9em; /* Smaller font for category */
+  color: #555; /* Lighter color for category */
+  white-space: nowrap; /* Prevent text wrap */
+  overflow: hidden; /* Hide overflow */
+  text-overflow: ellipsis; /* Show ellipsis if overflow */
+}
+
+.name {
+  font-size: 1em; /* Standard font size for name */
+  font-weight: 600; /* Semi-bold name */
+  margin: 5px 0; /* Margin above and below */
+}
+
+/* Date Styles */
+.date {
+  padding: 5px 0; /* Padding for date */
+  font-size: 0.8em; /* Smaller font for date */
+  color: #888; /* Light color for date */
+}
+
+/* Recommendations Section Styles */
+.recommendations {
+  margin-top: 20px; /* Space above recommendations */
+}
+
+/* Recommendation Card Styles */
+.recommendations .card {
+  width: 100%; /* Full width for recommendation card */
+  max-width: 200px; /* Max width similar to other cards */
+  margin: 0 auto; /* Center recommendation card */
+}
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px; /* Adjust as needed */
+}
+
+.loader div {
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background-color: #09f;
+  border-radius: 50%;
+  animation: pulse 0.6s infinite alternate;
+}
+
+.loader div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.loader div:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes pulse {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0.3;
+    transform: scale(1.5);
+  }
+}

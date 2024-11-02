@@ -1,0 +1,42 @@
+/* SearchResults.css */
+.searchResultsContainer {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  .productCard {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    text-align: left;
+  }
+  
+  .productCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+  }
+  
+  .productCard h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+  
+  .productCard p {
+    margin: 5px 0;
+  }
+  
+  .loader {
+    font-size: 1.5em;
+    color: #007bff;
+  }
+  
